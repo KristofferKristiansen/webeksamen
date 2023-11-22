@@ -3,13 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#">
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Forside</title>
 </head>
 <body>
-    
+    <div id="about-grid">
+        <header>
+            <span>
+                <a href="index.html"><img src="img/logo1.png" alt="Logo. Knapp for å komme tilbake hovedsiden."></a>
+            </span>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html#contact" class="yellow-button">Contact</a></li>
+                </ul>
+            </nav>
+            <article>
+                <p>Company name</p>
+                <h1>About our company</h1>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                <a href="#" class="yellow-button">Get in touch with us</a>
+            </article>
+        </header>
+        <main>
+            <section>
+                <h3>Our services</h3>
+                <article>
+                    <h4>Branding</h4>
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                </article>
+                <article>
+                    <h4>Branding</h4>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                </article>
+                <article>
+                    <h4>Branding</h4>
+                    <i class="fa-solid fa-code"></i>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                </article>
+                <article>
+                    <h4>Branding</h4>
+                    <i class="fa-solid fa-wifi"></i>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                </article>
+            </section>
+            <section>
+                <h3>Some of our clients</h3>
+                <img src="img/logo1.png" alt="campinglogo">
+                <img src="img/logo2.png" alt="mattematikklogo">
+                <img src="img/logo3.png" alt="kleslogo">
+            </section>
+            <section id="contactus">
+                <h3>Contact us</h3>
+                <article>
+                    <h4>Send us a message</h4>
+                    <form method="post" action="#" autocomplete="on">
+                        <label>
+                            name
+                            <input type="text" name="name" placeholder="Marcel Johnson...">
+                        </label>
+                        <label>
+                            subject
+                            <input type="text" name="subject" placeholder="Branding...">
+                        </label>
+                        <label>
+                            message
+                            <input type="text" name="message">
+                        </label>
+                        <input type="submit" value="contact-us-message" class="yellow-button">
+                    </form>
+                </article>
+                <article>
+                    <h4>Contact information</h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                    <i class="fa-solid fa-location-pin"></i>
+                    <p>B R A Veien 4, 1757 Halden</p>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>69608000</p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>postmottak@hiof.no</p>
+                    <!--Sett inn kart-->
+                </article>
+            </section>
+        </main>
+        <footer>
+            <span>
+                <a href="index.html"><img src="img/logo1.png" alt="Logo. Knapp for å komme tilbake til hovedsiden"></a>
+            </span>
+            <p>Company copyrights 2023</p>
+            <ul>
+                <li><a href="http://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <!--Ikoner hentet fra Fontawesome-->
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>
