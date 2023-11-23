@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+.yellow-button{
+    background-color: #e6bd43;
+    padding: 0.3rem;
+}
+
+/*fikse linker*/
+a{
+    text-decoration: none;
+}
+
+/*Ikoner*/
+.someikoner{
+    text-decoration: none;
+    background-color: #252525;
+    color: #fff;
+}
+
+.black-button{
+    border: solid#000;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    align-items: baseline;
+    background-color: #252525;
+}
+
+footer span img{
+    margin: 1.5rem;
+    max-width: 6rem;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+footer ul{
+    display: flex;
+    align-items: baseline;
+}
+
+footer ul li{
+    margin: 1rem;
+}
+
+#index-grid{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+#index-grid header{
+    grid-area: "header";
+    display: flex;
+    min width: 300px;
+}
+
+#index-grid article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#index-grid header article{
+    background-color: #b3b3b3;
+    padding: 2rem;
+}
+
+#index-grid header article a{
+    text-decoration: none;
+}
+
+#index-grid main{
+    grid-area: "main";
+}
+
+#index-grid main h2{
+    display: flex;
+    text-align: center;
+}
