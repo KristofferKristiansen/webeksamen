@@ -22,12 +22,12 @@
             <span>
                 <a href="index.html"><img src="img/logo1.png" alt="Logo. Knapp for å komme tilbake hovedsiden."></a>
             </span>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#contact" class="yellow-button">Contact</a></li>
+            <nav id="navbar">
+                <ul>
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li id="portfolio"><a href="products.html">Portfolio</a></li>
+                    <li id="home"><a href="about.html">About</a></li>
+                    <li id="contact"><a href="about.html#contact" class="yellow-button">Contact</a></li>
                 </ul>
             </nav>
             <article>
@@ -47,28 +47,30 @@
                     <a href="about.html" class="black-button">Read more about us</a>
                 </article>
             </section>
-            <section>
+            <section id="ourservices">
                 <h3>Our services</h3>
-                <article>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                </article>
-                <Article>
-                    <h4>Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                </Article>
-                <article>
-                    <h4>Development</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                </article>
-                <article>
-                    <h4>Support</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                </article>
+                <section id="services">
+                    <article>
+                        <h4>Branding</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </article>
+                    <Article>
+                        <h4>Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </Article>
+                    <article>
+                        <h4>Development</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </article>
+                    <article>
+                        <h4>Support</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </article>
+                </section>
             </section>
-            <Section>
+            <Section id="newsletter">
                 <h3>Sign up for our newsletter</h3>
-                <form>
+                <form id="signup">
                     <input type="text" id="newsletter-sign-up">
                     <input type="submit" value="Sign me up" class="yellow-button">
                 </form>

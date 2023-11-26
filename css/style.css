@@ -4,30 +4,30 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar{
-    text-decoration: none;
+    margin: 0;
+    max-width: 1600px;
 }
 
 header{
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 
-header nav{
+#navbar{
     display: flex;
-    align-items: center;
+    flex-direction: row;
 }
 
 .yellow-button{
     background-color: #e6bd43;
-    padding: 0.3rem;
+    padding: 0.5rem;
 }
 
 /*fikse linker*/
 a{
     text-decoration: none;
+    color: #000;
 }
 
 /*Ikoner*/
@@ -45,8 +45,12 @@ a{
 
 footer{
     display: flex;
-    align-items: baseline;
     background-color: #252525;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
 }
 
 footer span img{
@@ -77,7 +81,7 @@ footer ul li{
 #index-grid header{
     grid-area: "header";
     display: flex;
-    min width: 300px;
+    justify-content: center;
 }
 
 #index-grid article{
@@ -103,4 +107,30 @@ footer ul li{
 #index-grid main h2{
     display: flex;
     text-align: center;
+}
+
+#ourservices{
+    justify-content: center;
+    text-align: center;
+    margin: 5rem;
+    padding: 0.5rem;
+}
+
+#services{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#signup{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+#about-company{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 60%;
 }
