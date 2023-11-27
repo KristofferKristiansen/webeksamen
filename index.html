@@ -14,22 +14,24 @@
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Forside</title>
+    <title>Front Page</title>
 </head>
 <body>
     <div id="index-grid">
         <header>
-            <span>
-                <a href="index.html"><img src="img/logo1.png" alt="Logo. Knapp for å komme tilbake hovedsiden."></a>
-            </span>
-            <nav id="navbar">
-                <ul>
-                    <li id="home"><a href="index.html">Home</a></li>
-                    <li id="portfolio"><a href="products.html">Portfolio</a></li>
-                    <li id="home"><a href="about.html">About</a></li>
-                    <li id="contact"><a href="about.html#contact" class="yellow-button">Contact</a></li>
-                </ul>
-            </nav>
+            <section id="navigasjon">
+                <span>
+                    <a href="index.html"><img src="img/logo1.png" alt="Logo. Knapp for å komme tilbake hovedsiden."></a>
+                </span>
+                <nav id="navbar">
+                    <ul>
+                        <li id="home"><a href="index.html">Home</a></li>
+                        <li id="portfolio"><a href="products.html">Portfolio</a></li>
+                        <li id="about"><a href="about.html">About</a></li>
+                        <li id="contact"><a href="about.html#contact" class="yellow-button">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
             <article>
                 <h1>Compelling headline</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -37,14 +39,18 @@
             </article>
         </header>
         <main>
-            <section>
+            <section id="subheading">
                 <h2>Engaging subheading</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <article>
-                    <h3>About our company</h3>
-                    <img src="https://placehold.co/400x400" alt="placehold bilde">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <a href="about.html" class="black-button">Read more about us</a>
+                <article id="about-company">
+                    <section id="about-img">
+                        <img src="https://placehold.co/400x400" alt="placehold bilde">
+                    </section>
+                    <section id="about-text">
+                        <h3>About our company</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <a href="about.html" class="black-button">Read more about us</a>
+                    </section>
                 </article>
             </section>
             <section id="ourservices">

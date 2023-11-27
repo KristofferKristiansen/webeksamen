@@ -14,23 +14,25 @@
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Forside</title>
+    <title>About</title>
 </head>
 <body>
     <div id="about-grid">
         <header>
-            <span>
-                <a href="index.html"><img src="img/logo1.png" alt="Logo. Knapp for å komme tilbake hovedsiden."></a>
-            </span>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#contact" class="yellow-button">Contact</a></li>
-                </ul>
-            </nav>
-            <article>
+            <section id="navigasjon">
+                <span>
+                    <a href="index.html"><img src="img/logo1.png" alt="Logo. Knapp for å komme tilbake hovedsiden."></a>
+                </span>
+                <nav id="navbar">
+                    <ul>
+                        <li id="home"><a href="index.html">Home</a></li>
+                        <li id="portfolio"><a href="products.html">Portfolio</a></li>
+                        <li id="about"><a href="about.html">About</a></li>
+                        <li id="contact"><a href="about.html#contact" class="yellow-button">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <article id="company-name">
                 <p>Company name</p>
                 <h1>About our company</h1>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
@@ -38,7 +40,7 @@
             </article>
         </header>
         <main>
-            <section>
+            <section id="services">
                 <h3>Our services</h3>
                 <article>
                     <h4>Branding</h4>
@@ -61,7 +63,7 @@
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
                 </article>
             </section>
-            <section>
+            <section id="clients">
                 <h3>Some of our clients</h3>
                 <img src="img/logo1.png" alt="campinglogo">
                 <img src="img/logo2.png" alt="mattematikklogo">
@@ -87,7 +89,7 @@
                         <input type="submit" value="contact-us-message" class="yellow-button">
                     </form>
                 </article>
-                <article>
+                <article id="contact-information">
                     <h4>Contact information</h4>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
                     <i class="fa-solid fa-location-pin"></i>
@@ -106,7 +108,7 @@
             </span>
             <p>Company copyrights 2023</p>
             <ul class="someikoner">
-                <li><a href="http://www.facebook.com/"><i class="fa-brands fa-square-facebook" ></i></a></li>
+                <li><a href="http://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
                 <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
                 <!--Ikoner hentet fra Fontawesome-->

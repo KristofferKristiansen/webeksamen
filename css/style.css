@@ -14,14 +14,10 @@ header{
     text-decoration: none;
 }
 
-#navbar{
-    display: flex;
-    flex-direction: row;
-}
-
 .yellow-button{
     background-color: #e6bd43;
     padding: 0.5rem;
+    font-weight: 600;
 }
 
 /*fikse linker*/
@@ -33,14 +29,16 @@ a{
 /*Ikoner*/
 .someikoner{
     text-decoration: none;
-    background-color: #252525;
     color: #fff;
+    list-style: none;
 }
 
 .black-button{
     border: solid#000;
     padding: 0.5rem;
     text-decoration: none;
+    font-weight: 400;
+    margin: 1rem;
 }
 
 footer{
@@ -104,11 +102,6 @@ footer ul li{
     grid-area: "main";
 }
 
-#index-grid main h2{
-    display: flex;
-    text-align: center;
-}
-
 #ourservices{
     justify-content: center;
     text-align: center;
@@ -122,15 +115,183 @@ footer ul li{
     text-align: center;
 }
 
+#navigasjon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+body #index-grid header nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    list-style: none;
+    margin: 1rem;
+    font-weight: 600;
+    justify-content: center;
+}
+
+body #index-grid header nav ul #home{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+}
+
+header span img{
+    margin: 0.5rem;
+    max-width: 6rem;
+}
+
+body #index-grid header article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body #index-grid header article h1{
+    margin: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+body #index-grid header article p{
+    display: flex;
+    font-size: 1.2rem;
+    padding: 1rem;
+    justify-content: center;
+    width: 60%;
+}
+
+body #index-grid main{
+    grid-area: main;
+}
+
+body #index-grid main #subheading{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    justify-content: center;
+}
+
+body #index-grid main #subheading h2{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+body #index-grid main #subheading p{
+    font-size: 1.2rem;
+    text-align: center;
+    flex-basis: 85%;
+}
+
+body #index-grid main #about-company{
+    border: solid#000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+body #index-grid main #about-company h3{
+    display: flex;
+    font-weight: 800;
+}
+
+body #index-grid main #about-text{
+    flex-direction: column;
+    margin: 0.5rem;
+    text-align: center;
+    width: 50%;
+    align-items: center;
+}
+
+body #index-grid main #about-company img{
+    max-width: 800px;
+    margin: 1rem;
+    width: 90%;
+}
+
+body #index-grid main #newsletter{
+    background-color: #ded8d8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 #signup{
     display: flex;
     justify-content: center;
-    margin: 2rem;
+    margin-bottom: 1.5rem;
 }
 
-#about-company{
+body #products-grid header nav ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 60%;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    justify-content: center;
+    margin: 1rem;
 }
+
+body #products-grid header nav ul #portfolio{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+}
+
+body #products-grid header article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+body #products-grid #explore{
+    margin: 1rem;
+}
+
+body #products-grid #explore h3{
+    border-bottom: solid#e6bd43;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 28px;
+}
+
+body #products-grid #branding h3{
+    display: flex;
+    margin-top: 3rem;
+}
+
+body #products-grid #branding article{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+}
+
+body #products-grid .portinnhold{
+    margin: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body #about-grid header nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    justify-content: center;
+    margin: 1rem;
+}
+
+body #about-grid header nav ul #about{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+}
+
