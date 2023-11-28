@@ -1,23 +1,56 @@
+@charset "UTF-8";
 *{
     box-sizing: border-box;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: "header" "main" "footer";
+    display: grid;
     margin: 0;
-    max-width: 1600px;
 }
 
 header{
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    align-items: center;
+    margin: 1rem;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav span img{
+    max-width: 80px;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+header nav ul li{
+    margin: 0.3rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 40px;
 }
 
 .yellow-button{
     background-color: #e6bd43;
     padding: 0.5rem;
     font-weight: 600;
+}
+
+.yellow-button:hover{
+    background-color: #000;
+    color: #fff;
 }
 
 /*fikse linker*/
@@ -41,12 +74,16 @@ a{
     margin: 1rem;
 }
 
+.black-button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
 footer{
     display: flex;
     background-color: #252525;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     text-decoration: none;
 }
@@ -58,7 +95,7 @@ footer span img{
 
 footer p{
     display: flex;
-    justify-content: center;
+    text-align: center;
     color: white;
 }
 
@@ -69,17 +106,28 @@ footer ul{
 
 footer ul li{
     margin: 1rem;
+    list-style: none;
+    font-size: 45px;
+    align-items: center;
+    background-color: #fff;
 }
 
+/*CSS for Forsiden*/
 #index-grid{
     display: grid;
     grid-template-areas: "header" "main" "footer";
 }
 
 #index-grid header{
-    grid-area: "header";
     display: flex;
     justify-content: center;
+}
+
+#index-grid header #home{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+    text-decoration-thickness: 0.2rem;
+    font-weight: 600;
 }
 
 #index-grid article{
@@ -94,99 +142,40 @@ footer ul li{
     padding: 2rem;
 }
 
+#index-grid header article h1{
+    display: flex;
+    text-align: center;
+}
+
 #index-grid header article a{
     text-decoration: none;
 }
 
-#index-grid main{
-    grid-area: "main";
-}
-
-#ourservices{
-    justify-content: center;
-    text-align: center;
-    margin: 5rem;
+#index-grid header article p{
     padding: 0.5rem;
-}
-
-#services{
-    display: flex;
-    flex-direction: row;
     text-align: center;
 }
 
-#navigasjon{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1rem;
-}
-
-body #index-grid header nav ul{
-    display: flex;
-    flex-direction: row;
-    margin: 1rem;
-    list-style: none;
-    margin: 1rem;
-    font-weight: 600;
-    justify-content: center;
-}
-
-body #index-grid header nav ul #home{
-    text-decoration: underline;
-    text-decoration-color: #e6bd43;
-}
-
-header span img{
-    margin: 0.5rem;
-    max-width: 6rem;
-}
-
-body #index-grid header article{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-body #index-grid header article h1{
-    margin: 1rem;
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-body #index-grid header article p{
-    display: flex;
-    font-size: 1.2rem;
-    padding: 1rem;
-    justify-content: center;
-    width: 60%;
-}
-
-body #index-grid main{
-    grid-area: main;
-}
-
-body #index-grid main #subheading{
+#index-grid main #subheading{
     display: flex;
     flex-wrap: wrap;
     margin: 2rem;
     justify-content: center;
 }
 
-body #index-grid main #subheading h2{
+#index-grid main #subheading h2{
     font-size: 1.8rem;
     text-align: center;
 }
 
-body #index-grid main #subheading p{
+#index-grid main #subheading p{
     font-size: 1.2rem;
     text-align: center;
     flex-basis: 85%;
 }
 
-body #index-grid main #about-company{
-    border: solid#000;
+#index-grid main #about-company{
+    background-color: #e6bd43;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -195,26 +184,37 @@ body #index-grid main #about-company{
     margin-top: 2rem;
 }
 
-body #index-grid main #about-company h3{
+#index-grid main #about-company h3{
     display: flex;
     font-weight: 800;
+    justify-content: center;
 }
 
-body #index-grid main #about-text{
+#index-grid main #about-text{
     flex-direction: column;
     margin: 0.5rem;
     text-align: center;
-    width: 50%;
+    width: 100%;
     align-items: center;
 }
 
-body #index-grid main #about-company img{
+#index-grid main #about-company img{
     max-width: 800px;
     margin: 1rem;
     width: 90%;
 }
 
-body #index-grid main #newsletter{
+#index-grid main #ourservices h3{
+    display: flex;
+    justify-content: center;
+}
+
+#index-grid main #service-forside p{
+    display: flex;
+    text-align: center;
+}
+
+#index-grid main #newsletter{
     background-color: #ded8d8;
     display: flex;
     align-items: center;
@@ -227,71 +227,396 @@ body #index-grid main #newsletter{
     margin-bottom: 1.5rem;
 }
 
-body #products-grid header nav ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    text-decoration: none;
-    font-weight: 600;
-    justify-content: center;
-    margin: 1rem;
-}
-
-body #products-grid header nav ul #portfolio{
+/*CSS for produktsiden*/
+#products-grid header #portfolio{
     text-decoration: underline;
     text-decoration-color: #e6bd43;
+    text-decoration-thickness: 0.2rem;
+    font-weight: 600;
 }
 
-body #products-grid header article{
+#products-grid header article{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 300px;
+    background-image: url(../img/laptop-3076957_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 200px;
+    width: 100%;
 }
 
-body #products-grid #explore{
-    margin: 1rem;
+#products-grid #explore{
+    margin: 1.3rem;
 }
 
-body #products-grid #explore h3{
+#products-grid #explore h3{
     border-bottom: solid#e6bd43;
     margin: 1rem;
     padding: 0.5rem;
-    font-size: 28px;
+    font-size: 23px;
+    font-weight: 800;
 }
 
-body #products-grid #branding h3{
+#products-grid #explore a{
     display: flex;
-    margin-top: 3rem;
+    justify-content: space-around;
 }
 
-body #products-grid #branding article{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0.5rem;
-}
-
-body #products-grid .portinnhold{
+#products-grid .portinnhold{
     margin: 0.5rem;
     display: flex;
     flex-wrap: wrap;
 }
 
-body #about-grid header nav ul{
+#products-grid .portinnhold h3{
+    border-bottom: solid#e6bd43;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 23px;
+    font-weight: 800;
+    width: 100%;
+}
+
+#products-grid .portinnhold .placeholder{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    list-style: none;
-    text-decoration: none;
-    font-weight: 600;
     justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+#products-grid main .artikkelbilde{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    max-width: 350px;
+}
+
+/*CSS for about siden*/
+#about-grid header #about{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+    text-decoration-thickness: 0.2rem;
+    font-weight: 600;
+}
+
+#about-grid header #company-name{
+    background-image: url(../img/laptop-3076957_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+}
+
+#about-grid header #company-name a{
+    width: fit-content;
+}
+
+#about-grid header article{
+    display: flex;
+    margin: 0.5rem;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+#about-grid main{
+    display: grid;
+}
+
+#about-grid main #services{
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#about-grid main #services h3{
+    font-weight: 800;
+}
+
+#about-grid main #service-groups{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#about-grid main #clients{
+    background-color: #e6bd43;
+}
+
+#about-grid main #clients h3{
+    text-align: center;
+    font-weight: 800;
+}
+
+#about-grid main #client-logo{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#about-grid main #client-logo img{
+    margin: 0.5rem;
+    width: fit-content;
+}
+
+#about-grid main #contactus{
+    background-color: #dfdbdb;
+}
+
+#about-grid main #contactus h3{
+   margin: 1rem; 
+   text-align: center;
+}
+
+#about-grid main #contactus h4{
     margin: 1rem;
 }
 
-body #about-grid header nav ul #about{
-    text-decoration: underline;
-    text-decoration-color: #e6bd43;
+#about-grid main #contactus form{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
+#about-grid main #contactus form input{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    margin: 0.3rem;
+}
+
+#about-grid main #contactus form #message{
+    height: 8rem;
+}
+
+#about-grid main #contact-information{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: baseline;
+    font-size: 17px;
+}
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    max-height: 300px;
+    max-width: 1600px;
+}
+
+/*Desktop*/
+@media only screen and (min-width: 800px) {
+    
+    header #navigasjon{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      
+    header nav ul {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+
+    header nav ul li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+      }
+
+    footer{
+        display: grid;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer p{
+        justify-self: center;
+    }
+
+    footer ul{
+        display: flex;
+        justify-self: end;
+        margin: 0.5rem;
+    }
+
+    /*CSS Forside Desktop*/
+    #index-grid{
+        width: 100%;
+        max-width: 1600px;
+    }
+    #index-grid main #about-company{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #index-grid main #about-company section{
+        width: 40%;
+    }
+
+    #index-grid main #service-forside{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #index-grid main #service-forside article{
+        width: 25%;
+    }
+
+    #index-grid main #ourservices h3{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+
+    #newsletter h3{
+        font-size: 30px;
+    }
+
+    /*CSS portfolio Desktop*/
+    #products-grid{
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    #products-grid header article{
+        height: 400px;
+        margin-top: 1rem;
+    }
+
+    #products-grid main #explore{
+        margin: 2rem;
+    }
+
+    #products-grid main #explore a{
+        width: 20%;
+    }
+
+    #products-grid main #branding img{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    #products-grid main #design img{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3.5rem;
+        align-items: center;
+    }
+
+    #products-grid main #development img{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem;
+        align-items: center;
+    }
+
+    /*CSS About desktop*/
+    #about-grid{
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    #about-grid header #company-name{
+        margin-top: 1rem;
+        height: 400px;
+        justify-content: center;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-grid header #company-name a{
+        width: fit-content;
+        justify-content: center;
+    }
+
+    #about-grid header #company-name p{
+        width: 30%;
+        text-align: center;
+    }
+
+    #about-grid main #service-groups{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #about-grid main #service-groups article{
+        width: 25%;
+    }
+
+    #about-grid main #services h3{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+
+    #about-grid main #clients h3{
+        font-size: 25px;
+    }
+
+    #about-grid main #message-information{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    #about-grid main #contact-information{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    #about-grid main #skjema{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .google-map {
+        padding-bottom: 20%;
+        position: relative;
+    }
+    
+    .google-map iframe {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        max-height: 300px;
+        max-width: 1600px;
+    }
+}

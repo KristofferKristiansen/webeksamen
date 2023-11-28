@@ -28,7 +28,7 @@
                         <li id="home"><a href="index.html">Home</a></li>
                         <li id="portfolio"><a href="products.html">Portfolio</a></li>
                         <li id="about"><a href="about.html">About</a></li>
-                        <li id="contact"><a href="about.html#contact" class="yellow-button">Contact</a></li>
+                        <li id="contact"><a href="about.html#contactus" class="yellow-button">Contact</a></li>
                     </ul>
                 </nav>
             </section>
@@ -36,70 +36,80 @@
                 <p>Company name</p>
                 <h1>About our company</h1>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
-                <a href="#" class="yellow-button">Get in touch with us</a>
+                <a href="about.html#contactus" class="yellow-button">Get in touch with us</a>
             </article>
         </header>
         <main>
             <section id="services">
                 <h3>Our services</h3>
-                <article>
-                    <h4>Branding</h4>
-                    <i class="fa-solid fa-people-group"></i>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-                </article>
-                <article>
-                    <h4>Branding</h4>
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-                </article>
-                <article>
-                    <h4>Branding</h4>
-                    <i class="fa-solid fa-code"></i>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-                </article>
-                <article>
-                    <h4>Branding</h4>
-                    <i class="fa-solid fa-wifi"></i>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-                </article>
+                <section id="service-groups">
+                    <article>
+                        <i class="fa-solid fa-people-group"></i>
+                        <h4>Branding</h4>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h4>Branding</h4>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-code"></i>
+                        <h4>Branding</h4>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-wifi"></i>
+                        <h4>Branding</h4>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                    </article>
+                </section>
             </section>
             <section id="clients">
                 <h3>Some of our clients</h3>
-                <img src="img/logo1.png" alt="campinglogo">
-                <img src="img/logo2.png" alt="mattematikklogo">
-                <img src="img/logo3.png" alt="kleslogo">
+                <section id="client-logo">
+                    <img src="img/logo1.png" alt="campinglogo">
+                    <img src="img/logo2.png" alt="mattematikklogo">
+                    <img src="img/logo3.png" alt="kleslogo">
+                </section>
             </section>
             <section id="contactus">
                 <h3>Contact us</h3>
-                <article>
-                    <h4>Send us a message</h4>
-                    <form method="post" action="#" autocomplete="on">
-                        <label>
-                            name
-                            <input type="text" name="name" placeholder="Marcel Johnson...">
-                        </label>
-                        <label>
-                            subject
-                            <input type="text" name="subject" placeholder="Branding...">
-                        </label>
-                        <label>
-                            message
-                            <input type="text" name="message">
-                        </label>
-                        <input type="submit" value="contact-us-message" class="yellow-button">
-                    </form>
+                <article id="skjema">
+                    <article id="message-information">
+                        <h4>Send us a message</h4>
+                        <form method="post" action="#" autocomplete="on">
+                            <label>
+                                Name
+                                <input type="text" name="name" placeholder="Marcel Johnson...">
+                            </label>
+                            <label>
+                                Subject
+                                <input type="text" name="subject" placeholder="Branding...">
+                            </label>
+                            <label>
+                                Message
+                                <input type="text" name="message" id="message">
+                            </label>
+                            <input type="submit" value="Send Message" class="yellow-button">
+                        </form>
+                    </article>
+                    <article id="contact-information">
+                        <h4>Contact information</h4>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                        <section id="bedrift-info">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <p>B R A Veien 4, 1757 Halden</p>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>69608000</p>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>postmottak@hiof.no</p>
+                        </section>
+                    </article>
                 </article>
-                <article id="contact-information">
-                    <h4>Contact information</h4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-                    <i class="fa-solid fa-location-pin"></i>
-                    <p>B R A Veien 4, 1757 Halden</p>
-                    <i class="fa-solid fa-phone"></i>
-                    <p>69608000</p>
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>postmottak@hiof.no</p>
-                    <!--Sett inn kart-->
-                </article>
+            </section>
+            <section class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.18844106045!2d11.350228377099208!3d59.12924747451803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1701193426847!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </main>
         <footer>
